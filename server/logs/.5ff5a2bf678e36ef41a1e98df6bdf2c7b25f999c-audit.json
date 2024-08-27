@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\adith\\HitwicketChallenge\\server\\logs\\.5ff5a2bf678e36ef41a1e98df6bdf2c7b25f999c-audit.json",
+    "files": [
+        {
+            "date": 1724724597217,
+            "name": "C:\\Users\\adith\\HitwicketChallenge\\server\\logs\\2024-08-27-combined.log",
+            "hash": "091104d180700f9653af609b2417ecd5f055928a042236ac20ad2d645276ecc5"
+        }
+    ],
+    "hashType": "sha256"
+}
