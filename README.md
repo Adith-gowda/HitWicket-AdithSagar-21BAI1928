@@ -44,9 +44,9 @@ nodemon index.js
 ```
 
 ### 3. Set Up the Client
-- Navigate to the client directory:
+- Navigate to the client directory from Home directory:
 ```bash
-cd ../client
+cd client
 npm install react react-dom socket.io-client axios
 ```
 
@@ -61,4 +61,4 @@ Open the local host link provided in your terminal after starting the client.
 ### 5. Start Playing
 Open two tabs in your web browser with the same local host link. Join as Player A from one tab and Player B from the other tab.
 
-Enjoy the game!
+### Enjoy the game!
