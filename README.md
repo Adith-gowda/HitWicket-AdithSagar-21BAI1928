@@ -25,3 +25,40 @@ Follow these steps to set up and run the game on your local machine:
 First, clone this repository to your local machine:
 ```bash
 git clone <Repo-link>
+```
+
+### 2. Set Up the Server
+- Navigate to the server folder and install the necessary packages:
+```bash
+cd server
+npm install express cors nodemon winston-daily-rotate-file socket.io
+```
+
+- Start the server by running:
+```bash
+npm start
+```
+or
+```bash
+nodemon index.js
+```
+
+### 3. Set Up the Client
+- Navigate to the client directory:
+```bash
+cd ../client
+npm install react react-dom socket.io-client axios
+```
+
+- Start the client by running:
+```bash
+npm start
+```
+
+### 4. Access the Game
+Open the local host link provided in your terminal after starting the client.
+
+### 5. Start Playing
+Open two tabs in your web browser with the same local host link. Join as Player A from one tab and Player B from the other tab.
+
+Enjoy the game!
