@@ -151,7 +151,7 @@ function processMove(player, character, newRow, newCol) {
             break;
         case 'H':
             if (character === 'H1') {
-                validMove = (Math.abs(newRow - row) === 2 && col === newCol) || (row === newRow && Math.abs(newNewCol - col) === 2);
+                validMove = (Math.abs(newRow - row) === 2 && col === newCol) || (row === newRow && Math.abs(newCol - col) === 2);
             } else if (character === 'H2') {
                 validMove = Math.abs(newRow - row) === 2 && Math.abs(newCol - col) === 2;
             }
