@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Turn-Based Chess-Like Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a turn-based, chess-like game that utilizes real-time websocket communication. The game is designed for two players: Player A and Player B, who connect through a websocket. The objective is to eliminate all the opponent's pawns and heroes. All operations occur in real time, providing a dynamic and engaging experience.
 
-In the project directory, you can run:
+## Components
 
-### `npm start`
+### 1. Server
+- *Language*: Node.js, Express.js
+- *Purpose*: The server handles the core game logic, processes requests from the clients (Player A and Player B), and maintains the game state while providing appropriate responses.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Websocket Layer
+- *Function*: Manages real-time communication between the client and server, handling events such as game initialization, moves, and notification updates.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 3. Client
+- *Technologies Used*: React.js
+- *Purpose*: The client provides the user interface and interacts with the server through the websocket layer.
 
-### `npm test`
+## How to Set Up the Game
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these steps to set up and run the game on your local machine:
 
-### `npm run build`
+### 1. Clone the Repository
+First, clone this repository to your local machine:
+```bash
+git clone <Repo-link>
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Set Up the Server
+- Navigate to the server folder and install the necessary packages:
+```bash
+cd server
+npm install express cors nodemon winston-daily-rotate-file socket.io
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Start the server by running:
+```bash
+npm start
+```
+or
+```bash
+nodemon index.js
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Set Up the Client
+- Navigate to the client directory from Home directory:
+```bash
+cd client
+npm install react react-dom socket.io-client axios
+```
 
-### `npm run eject`
+- Start the client by running:
+```bash
+npm start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 4. Access the Game
+Open the local host link provided in your terminal after starting the client.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 5. Start Playing
+Open two tabs in your web browser with the same local host link. Join as Player A from one tab and Player B from the other tab.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Enjoy the game!
